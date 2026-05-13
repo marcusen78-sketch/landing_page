@@ -926,13 +926,13 @@ export default function ScrollCanvas() {
                 transform: `scale(${businessCardProgress < 0.35 ? 0.97 : businessCardProgress < 0.4 ? 0.97 + ((businessCardProgress - 0.35) / 0.05) * 0.03 : 1})`
               }}
             >
-              <div className="backdrop-blur-md bg-white/[0.03] border border-cyan-500/30 rounded-3xl p-16 max-w-5xl w-full shadow-[0_0_50px_rgba(0,212,255,0.2)] relative overflow-hidden">
+              <div className="backdrop-blur-md bg-white/[0.03] border border-cyan-500/30 rounded-3xl p-16 md:py-24 max-w-7xl w-full shadow-[0_0_50px_rgba(0,212,255,0.2)] relative overflow-hidden min-h-[650px] flex items-center">
                 {/* CV Keypoint Decoration */}
                 <div className="absolute top-8 right-8 w-12 h-12 border-2 border-cyan-400/40 rounded-full keypoint-spin" style={{ animationDelay: '5s' }}></div>
                 <div className="absolute top-12 right-12 w-4 h-4 bg-cyan-400/30 rounded-full"></div>
 
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                  <div>
+                <div className="grid md:grid-cols-12 gap-12 items-center w-full">
+                  <div className="md:col-span-4">
                     <p className="text-cyan-400 text-sm tracking-[0.3em] uppercase font-bold mb-6">THE VALUE</p>
                     <h2 className="text-5xl md:text-6xl font-extrabold tracking-tighter text-white mb-6">
                       B2B SaaS Model
@@ -951,8 +951,70 @@ export default function ScrollCanvas() {
                     </p>
                   </div>
 
-                  <div className="relative">
-                    <ClinicalDashboard />
+                  <div className="relative md:col-span-8 flex justify-center items-center">
+                    <svg viewBox="0 0 800 400" className="w-full h-auto drop-shadow-[0_0_40px_rgba(0,212,255,0.15)]">
+                      <defs>
+                        <linearGradient id="gradL1" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.1" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.3" />
+                        </linearGradient>
+                        <linearGradient id="gradL2" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.3" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.5" />
+                        </linearGradient>
+                        <linearGradient id="gradL3" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.5" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.8" />
+                        </linearGradient>
+                        
+                        <linearGradient id="gradR1" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.8" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.5" />
+                        </linearGradient>
+                        <linearGradient id="gradR2" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.5" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.3" />
+                        </linearGradient>
+                        <linearGradient id="gradR3" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.3" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.1" />
+                        </linearGradient>
+                        
+                        <linearGradient id="gradCenter" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.2" />
+                          <stop offset="50%" stopColor="#06b6d4" stopOpacity="0.6" />
+                          <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.2" />
+                        </linearGradient>
+                      </defs>
+
+                      {/* Left Side Segments */}
+                      <path d="M 20,50 L 140,85 L 140,315 L 20,350 Z" fill="url(#gradL1)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.15" />
+                      <text x="80" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Awareness</text>
+
+                      <path d="M 140,85 L 260,120 L 260,280 L 140,315 Z" fill="url(#gradL2)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.25" />
+                      <text x="200" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Education</text>
+
+                      <path d="M 260,120 L 380,150 L 380,250 L 260,280 Z" fill="url(#gradL3)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.4" />
+                      <text x="320" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Selection</text>
+
+                      {/* Center Node */}
+                      <rect x="380" y="150" width="40" height="100" fill="url(#gradCenter)" stroke="#22d3ee" strokeWidth="2" strokeOpacity="0.8" />
+                      <line x1="400" y1="120" x2="400" y2="280" stroke="#22d3ee" strokeWidth="2" strokeOpacity="0.6" strokeDasharray="4 4" />
+                      <circle cx="400" cy="200" r="6" fill="#fff" />
+
+                      {/* Right Side Segments */}
+                      <path d="M 420,150 L 540,120 L 540,280 L 420,250 Z" fill="url(#gradR1)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.4" />
+                      <text x="480" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Onboard</text>
+
+                      <path d="M 540,120 L 660,85 L 660,315 L 540,280 Z" fill="url(#gradR2)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.25" />
+                      <text x="600" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Impact</text>
+
+                      <path d="M 660,85 L 780,50 L 780,350 L 660,315 Z" fill="url(#gradR3)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.15" />
+                      <text x="720" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Expansion</text>
+                      
+                      {/* Interactive glowing elements */}
+                      <circle cx="400" cy="200" r="2" fill="#fff" className="animate-ping" />
+                    </svg>
                   </div>
                 </div>
               </div>
