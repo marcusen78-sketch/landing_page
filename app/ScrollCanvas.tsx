@@ -926,96 +926,136 @@ export default function ScrollCanvas() {
                 transform: `scale(${businessCardProgress < 0.35 ? 0.97 : businessCardProgress < 0.4 ? 0.97 + ((businessCardProgress - 0.35) / 0.05) * 0.03 : 1})`
               }}
             >
-              <div className="backdrop-blur-md bg-white/[0.03] border border-cyan-500/30 rounded-3xl p-16 md:py-24 max-w-7xl w-full shadow-[0_0_50px_rgba(0,212,255,0.2)] relative overflow-hidden min-h-[650px] flex items-center">
-                {/* CV Keypoint Decoration */}
-                <div className="absolute top-8 right-8 w-12 h-12 border-2 border-cyan-400/40 rounded-full keypoint-spin" style={{ animationDelay: '5s' }}></div>
-                <div className="absolute top-12 right-12 w-4 h-4 bg-cyan-400/30 rounded-full"></div>
-
-                <div className="grid md:grid-cols-12 gap-12 items-center w-full">
-                  <div className="md:col-span-4">
-                    <p className="text-cyan-400 text-sm tracking-[0.3em] uppercase font-bold mb-6">THE VALUE</p>
-                    <h2 className="text-5xl md:text-6xl font-extrabold tracking-tighter text-white mb-6">
+              <div className="w-full max-w-[100rem] mx-auto relative min-h-[700px] grid grid-cols-1 lg:grid-cols-12 items-center px-4 md:px-12">
+                
+                {/* Left Side: Title and Bowtie */}
+                <div className="lg:col-span-8 xl:col-span-8 flex flex-col justify-center pr-0 lg:pr-8">
+                  <div className="mb-8 lg:mb-12">
+                    <p className="text-cyan-400 text-sm tracking-[0.3em] uppercase font-bold mb-4 drop-shadow-[0_0_10px_rgba(0,212,255,0.8)]">THE VALUE</p>
+                    <h2 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.2)]">
                       B2B SaaS Model
                     </h2>
-                    <p className="text-white/80 text-xl leading-relaxed mb-4">
-                      Clinics subscribe. Better outcomes and smarter use of resources.
-                    </p>
-                    <p className="text-white/80 text-xl leading-relaxed mb-8">
-                      <span className="text-cyan-300 font-bold text-3xl counter-animate">3x</span> more patients managed.
-                    </p>
-                    <p className="text-cyan-400/70 text-sm italic">
-                      Sequential functional telemonitoring — not diagnosis.
-                    </p>
-                    <p className="text-cyan-400/50 text-xs italic mt-1">
-                      Decision support, not replacement.
-                    </p>
                   </div>
 
-                  <div className="relative md:col-span-8 flex justify-center items-center">
-                    <svg viewBox="0 0 800 400" className="w-full h-auto drop-shadow-[0_0_40px_rgba(0,212,255,0.15)]">
+                  <div className="w-full">
+                    <svg viewBox="0 0 800 400" className="w-full h-auto drop-shadow-[0_0_60px_rgba(0,212,255,0.3)]">
                       <defs>
                         <linearGradient id="gradL1" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#083344" stopOpacity="0.1" />
-                          <stop offset="100%" stopColor="#083344" stopOpacity="0.3" />
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.2" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.4" />
                         </linearGradient>
                         <linearGradient id="gradL2" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#083344" stopOpacity="0.3" />
-                          <stop offset="100%" stopColor="#083344" stopOpacity="0.5" />
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.4" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.6" />
                         </linearGradient>
                         <linearGradient id="gradL3" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#083344" stopOpacity="0.5" />
-                          <stop offset="100%" stopColor="#083344" stopOpacity="0.8" />
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.6" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.9" />
                         </linearGradient>
                         
                         <linearGradient id="gradR1" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#083344" stopOpacity="0.8" />
-                          <stop offset="100%" stopColor="#083344" stopOpacity="0.5" />
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.9" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.6" />
                         </linearGradient>
                         <linearGradient id="gradR2" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#083344" stopOpacity="0.5" />
-                          <stop offset="100%" stopColor="#083344" stopOpacity="0.3" />
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.6" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.4" />
                         </linearGradient>
                         <linearGradient id="gradR3" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#083344" stopOpacity="0.3" />
-                          <stop offset="100%" stopColor="#083344" stopOpacity="0.1" />
+                          <stop offset="0%" stopColor="#083344" stopOpacity="0.4" />
+                          <stop offset="100%" stopColor="#083344" stopOpacity="0.2" />
                         </linearGradient>
                         
                         <linearGradient id="gradCenter" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.2" />
-                          <stop offset="50%" stopColor="#06b6d4" stopOpacity="0.6" />
-                          <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.2" />
+                          <stop offset="0%" stopColor="#06b6d4" stopOpacity="0.4" />
+                          <stop offset="50%" stopColor="#06b6d4" stopOpacity="0.8" />
+                          <stop offset="100%" stopColor="#06b6d4" stopOpacity="0.4" />
                         </linearGradient>
                       </defs>
 
                       {/* Left Side Segments */}
-                      <path d="M 20,50 L 140,85 L 140,315 L 20,350 Z" fill="url(#gradL1)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.15" />
-                      <text x="80" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Awareness</text>
+                      <path d="M 20,50 L 140,85 L 140,315 L 20,350 Z" fill="url(#gradL1)" stroke="#06b6d4" strokeWidth="1.5" strokeOpacity="0.3" />
+                      <text x="80" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="18" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 10px rgba(0,0,0,0.9)'}}>Awareness</text>
 
-                      <path d="M 140,85 L 260,120 L 260,280 L 140,315 Z" fill="url(#gradL2)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.25" />
-                      <text x="200" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Education</text>
+                      <path d="M 140,85 L 260,120 L 260,280 L 140,315 Z" fill="url(#gradL2)" stroke="#06b6d4" strokeWidth="1.5" strokeOpacity="0.4" />
+                      <text x="200" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="18" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 10px rgba(0,0,0,0.9)'}}>Education</text>
 
-                      <path d="M 260,120 L 380,150 L 380,250 L 260,280 Z" fill="url(#gradL3)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.4" />
-                      <text x="320" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Selection</text>
+                      <path d="M 260,120 L 380,150 L 380,250 L 260,280 Z" fill="url(#gradL3)" stroke="#06b6d4" strokeWidth="1.5" strokeOpacity="0.5" />
+                      <text x="320" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="18" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 10px rgba(0,0,0,0.9)'}}>Selection</text>
 
                       {/* Center Node */}
-                      <rect x="380" y="150" width="40" height="100" fill="url(#gradCenter)" stroke="#22d3ee" strokeWidth="2" strokeOpacity="0.8" />
-                      <line x1="400" y1="120" x2="400" y2="280" stroke="#22d3ee" strokeWidth="2" strokeOpacity="0.6" strokeDasharray="4 4" />
+                      <rect x="380" y="150" width="40" height="100" fill="url(#gradCenter)" stroke="#22d3ee" strokeWidth="2" strokeOpacity="0.9" />
+                      <line x1="400" y1="120" x2="400" y2="280" stroke="#22d3ee" strokeWidth="3" strokeOpacity="0.8" strokeDasharray="4 4" />
                       <circle cx="400" cy="200" r="6" fill="#fff" />
 
                       {/* Right Side Segments */}
-                      <path d="M 420,150 L 540,120 L 540,280 L 420,250 Z" fill="url(#gradR1)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.4" />
-                      <text x="480" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Onboard</text>
+                      <path d="M 420,150 L 540,120 L 540,280 L 420,250 Z" fill="url(#gradR1)" stroke="#06b6d4" strokeWidth="1.5" strokeOpacity="0.5" />
+                      <text x="480" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="18" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 10px rgba(0,0,0,0.9)'}}>Onboard</text>
 
-                      <path d="M 540,120 L 660,85 L 660,315 L 540,280 Z" fill="url(#gradR2)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.25" />
-                      <text x="600" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Impact</text>
+                      <path d="M 540,120 L 660,85 L 660,315 L 540,280 Z" fill="url(#gradR2)" stroke="#06b6d4" strokeWidth="1.5" strokeOpacity="0.4" />
+                      <text x="600" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="18" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 10px rgba(0,0,0,0.9)'}}>Impact</text>
 
-                      <path d="M 660,85 L 780,50 L 780,350 L 660,315 Z" fill="url(#gradR3)" stroke="#06b6d4" strokeWidth="1" strokeOpacity="0.15" />
-                      <text x="720" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="16" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 8px rgba(0,0,0,0.8)'}}>Expansion</text>
-                      
-                      {/* Interactive glowing elements */}
-                      <circle cx="400" cy="200" r="2" fill="#fff" className="animate-ping" />
+                      <path d="M 660,85 L 780,50 L 780,350 L 660,315 Z" fill="url(#gradR3)" stroke="#06b6d4" strokeWidth="1.5" strokeOpacity="0.3" />
+                      <text x="720" y="200" textAnchor="middle" dominantBaseline="middle" fill="#fff" fontSize="18" fontWeight="bold" opacity="0.9" style={{textShadow: '0px 0px 10px rgba(0,0,0,0.9)'}}>Expansion</text>
                     </svg>
                   </div>
+                </div>
+
+                {/* Right Side: Flashcards */}
+                <div className="lg:col-span-4 xl:col-span-4 hidden lg:flex flex-col justify-center gap-6">
+                  
+                  {/* Pricing Flashcard */}
+                  <div className="bg-[#0a0a0a] border border-white/10 rounded-[32px] p-8 relative overflow-hidden group hover:border-cyan-500/30 transition-colors duration-500 shadow-2xl">
+                    {/* Header badge */}
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="relative w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full shadow-[0_0_8px_rgba(34,211,238,0.8)]"></div>
+                      </div>
+                      <span className="text-cyan-400 text-xs font-bold tracking-[0.2em] uppercase">PRICING</span>
+                    </div>
+
+                    <h3 className="text-4xl lg:text-[40px] font-extrabold text-white mb-3 leading-[1.1] tracking-tighter">
+                      Flexible <span className="text-cyan-400">SaaS</span> Pricing.
+                    </h3>
+                    <p className="text-white/60 text-sm mb-10">
+                      Aligning costs with clinical impact and active usage.
+                    </p>
+
+                    <div className="flex items-center justify-between relative">
+                      {/* Divider */}
+                      <div className="absolute left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2"></div>
+                      
+                      {/* Left Stat */}
+                      <div className="w-1/2 pr-4">
+                        <div className="text-[2.75rem] font-bold text-white leading-none mb-2 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] tracking-tighter">$150</div>
+                        <div className="text-white/50 text-[10px] uppercase tracking-wider font-semibold">per clinician/mo</div>
+                      </div>
+
+                      {/* Right Stat */}
+                      <div className="w-1/2 pl-6">
+                        <div className="text-[2.75rem] font-bold text-white leading-none mb-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)] tracking-tighter">$50</div>
+                        <div className="text-white/50 text-[10px] uppercase tracking-wider font-semibold">per active patient/mo</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Bowtie Flashcard */}
+                  <div className="bg-[#0a0a0a] border border-white/10 rounded-[32px] p-8 relative overflow-hidden group hover:border-cyan-500/30 transition-colors duration-500 shadow-2xl">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="relative w-8 h-8 rounded-full border border-cyan-500/30 flex items-center justify-center">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full shadow-[0_0_8px_rgba(34,211,238,0.8)]"></div>
+                      </div>
+                      <span className="text-cyan-400 text-xs font-bold tracking-[0.2em] uppercase">METHODOLOGY</span>
+                    </div>
+
+                    <h3 className="text-4xl lg:text-[40px] font-extrabold text-white mb-3 leading-[1.1] tracking-tighter">
+                      Driven by the <span className="text-cyan-400 drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]">Bowtie</span> Model.
+                    </h3>
+                    <p className="text-white/60 text-sm">
+                      Focusing beyond acquisition to ensure recurring impact, deep engagement, and continuous clinical expansion.
+                    </p>
+                  </div>
+
                 </div>
               </div>
             </div>
