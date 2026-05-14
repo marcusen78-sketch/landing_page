@@ -594,10 +594,10 @@ export default function ScrollCanvas() {
           {/* Massive Counter - Left Side (NO BOX) */}
           <div className="absolute top-1/2 left-12 -translate-y-1/2">
             <p className="text-7xl md:text-8xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white to-white/30 drop-shadow-[0_0_30px_rgba(0,212,255,0.4)] leading-none">
-              {patientCount}
+              1 out of 4
             </p>
             <p className="text-cyan-400 text-lg tracking-widest uppercase font-semibold mt-2 drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
-              NEW CASES / YEAR
+              ADULTS IS EXPECTED TO EXPERIENCE A STROKE
             </p>
           </div>
         </div>
