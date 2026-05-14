@@ -1449,7 +1449,7 @@ export default function ScrollCanvas() {
               </div>
               <h4 className="text-white font-semibold text-base text-center mb-2">Oakley Capital Limited</h4>
               <span className="text-xs md:text-sm text-amber-400 font-semibold tracking-wider uppercase">
-                Entrepreneurship Support
+                Financial Advisoring
               </span>
             </div>
 
