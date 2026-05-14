@@ -571,7 +571,7 @@ function NeuralDashboard() {
         </div>
 
         <div className="flex justify-between pt-0.5">
-          <span className="text-[7px] font-mono text-cyan-400/35">SteadyArc Clinical v2.4</span>
+          <span className="text-[7px] font-mono text-cyan-400/35">FixedGap Clinical v2.4</span>
           <span className="text-[7px] font-mono text-white/25">Webcam · Mic</span>
         </div>
       </div>

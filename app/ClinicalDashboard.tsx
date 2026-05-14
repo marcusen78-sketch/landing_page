@@ -366,7 +366,7 @@ function ClinicalDashboard() {
         </div>
 
         <div className="flex justify-between pt-0.5">
-          <span className="text-[7px] font-mono" style={{ color: "hsl(215,10%,28%)" }}>SteadyArc Clinical v2.4</span>
+          <span className="text-[7px] font-mono" style={{ color: "hsl(215,10%,28%)" }}>FixedGap Clinical v2.4</span>
           <span className="text-[7px] font-mono" style={{ color: "hsl(215,10%,28%)" }}>Webcam · Tobii Nano · Mic</span>
         </div>
       </div>
