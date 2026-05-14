@@ -18,15 +18,14 @@ const sections = [
   {
     startFrame: 45,
     endFrame: 130,
-    title: "Recovery happens every day. So does deterioration.",
-    sub: "Decisions based on visits too far apart.",
+    title: "The monitoring gap is structural.",
+    sub: "673 post-stroke patients per clinician. Spaced visits.",
   },
   {
     startFrame: 130,
     endFrame: 300,
-    title: "The monitoring gap is structural.",
-    sub: "673 post-stroke patients per clinician. Spaced visits.",
-    sub2: "Every missed week matters.",
+    title: "Recovery happens every day. So does deterioration.",
+    sub: "Decisions are based on patient recall, not real data.",
   },
   {
     startFrame: 300,
@@ -269,8 +268,8 @@ export default function ScrollCanvas() {
         }
       });
 
-      // Section 2 (Recovery Gap): frames 65-130 (delayed from text)
-      const recoveryGapSection = { startFrame: 65, endFrame: 130 };
+      // Section 2 (Recovery Gap): frames 150-300 (delayed from text)
+      const recoveryGapSection = { startFrame: 150, endFrame: 300 };
       const recoveryGapOpacity = getSectionOpacity(progress, recoveryGapSection);
       const recoveryGapTransformY = getSectionTransform(progress, recoveryGapSection);
       const recoveryGap = recoveryGapRef.current;
@@ -279,14 +278,14 @@ export default function ScrollCanvas() {
         recoveryGap.style.transform = `translateY(${recoveryGapTransformY}px)`;
       }
 
-      // Section 2.5 (Patient Counter): frames 130-300
-      const patientCounterSection = { startFrame: 130, endFrame: 300 };
+      // Section 2.5 (Patient Counter): frames 45-130
+      const patientCounterSection = { startFrame: 45, endFrame: 130 };
       const counterOpacity = getSectionOpacity(progress, patientCounterSection);
       const counterTransformY = getSectionTransform(progress, patientCounterSection);
       const patientCounter = patientCounterRef.current;
 
       // Calculate time-based counter value with ease-out
-      if (frameIdx >= 130 && frameIdx <= 300) {
+      if (frameIdx >= 45 && frameIdx <= 130) {
         // Initialize start time when section is first entered
         if (counterStartTimeRef.current === null) {
           counterStartTimeRef.current = performance.now();
@@ -546,6 +545,15 @@ export default function ScrollCanvas() {
             zIndex: 20,
           }}
         >
+          {/* Left Side Message */}
+          <div className="absolute top-1/2 left-12 md:left-20 -translate-y-1/2 max-w-[400px]">
+            <p className="text-3xl md:text-4xl font-extrabold text-white leading-tight tracking-tight drop-shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+              In a 12 week neuroplasticity window
+              <br />
+              Every week <span className="text-red-500 drop-shadow-[0_0_15px_rgba(239,68,68,0.8)]">matters</span>
+            </p>
+          </div>
+
           {/* Projected Data Timeline - Right Side (NO BOX) */}
           <div className="absolute top-1/2 right-20 -translate-y-1/2">
             {/* Vertical Timeline */}
