@@ -591,12 +591,44 @@ export default function ScrollCanvas() {
             zIndex: 20,
           }}
         >
-          {/* Ratio Stat - Left Side */}
-          <div className="absolute top-1/2 left-12 -translate-y-1/2">
-            <p className="text-7xl md:text-8xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white to-white/30 drop-shadow-[0_0_30px_rgba(0,212,255,0.4)] leading-none">
-              1:4
-            </p>
-            <p className="text-cyan-400 text-lg tracking-widest uppercase font-semibold mt-2 drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
+          {/* Grid of People - Left Side */}
+          <div className="absolute top-1/2 left-12 -translate-y-1/2 flex flex-col items-start gap-6">
+            {/* 2x2 Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              {/* Person 1 - AFFECTED (Red/Orange) */}
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-red-500 to-orange-600 flex items-center justify-center shadow-[0_0_40px_rgba(239,68,68,0.6)] relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <svg className="w-10 h-10 md:w-12 md:h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+                <div className="absolute inset-0 opacity-50 animate-pulse">
+                  <div className="absolute inset-2 rounded-xl border border-white/40"></div>
+                </div>
+              </div>
+
+              {/* Person 2 - Unaffected */}
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
+                <svg className="w-10 h-10 md:w-12 md:h-12 text-white/40" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+              </div>
+
+              {/* Person 3 - Unaffected */}
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
+                <svg className="w-10 h-10 md:w-12 md:h-12 text-white/40" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+              </div>
+
+              {/* Person 4 - Unaffected */}
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-sm">
+                <svg className="w-10 h-10 md:w-12 md:h-12 text-white/40" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+
+            <p className="text-cyan-400 text-base md:text-lg tracking-wide uppercase font-semibold drop-shadow-[0_0_10px_rgba(34,211,238,0.6)] max-w-[200px]">
               LIFETIME STROKE RISK
             </p>
           </div>
