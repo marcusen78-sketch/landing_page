@@ -19,7 +19,13 @@ const sections = [
     startFrame: 45,
     endFrame: 130,
     title: "The monitoring gap is structural.",
-    sub: "673 post-stroke patients per clinician. Spaced visits.",
+    sub: (
+      <>
+        673 post-stroke patients per clinician.
+        <br />
+        Follow-up is limited to occasional check-ins.
+      </>
+    ),
   },
   {
     startFrame: 130,
