@@ -591,32 +591,12 @@ export default function ScrollCanvas() {
             zIndex: 20,
           }}
         >
-          {/* Visual Stat - Left Side */}
-          <div className="absolute top-1/2 left-12 -translate-y-1/2 flex flex-col items-start gap-8">
-            {/* 4 person icons with 1 highlighted */}
-            <div className="flex gap-4">
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-cyan-400 flex items-center justify-center shadow-[0_0_30px_rgba(34,211,238,0.8)]">
-                <svg className="w-8 h-8 md:w-10 md:h-10 text-black" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
-                <svg className="w-8 h-8 md:w-10 md:h-10 text-white/30" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
-                <svg className="w-8 h-8 md:w-10 md:h-10 text-white/30" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                </svg>
-              </div>
-              <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
-                <svg className="w-8 h-8 md:w-10 md:h-10 text-white/30" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                </svg>
-              </div>
-            </div>
-            <p className="text-cyan-400 text-base tracking-wide uppercase font-semibold drop-shadow-[0_0_10px_rgba(34,211,238,0.6)] max-w-xs">
+          {/* Ratio Stat - Left Side */}
+          <div className="absolute top-1/2 left-12 -translate-y-1/2">
+            <p className="text-7xl md:text-8xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white to-white/30 drop-shadow-[0_0_30px_rgba(0,212,255,0.4)] leading-none">
+              1:4
+            </p>
+            <p className="text-cyan-400 text-lg tracking-widest uppercase font-semibold mt-2 drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
               LIFETIME STROKE RISK
             </p>
           </div>
