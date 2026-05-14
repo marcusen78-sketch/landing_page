@@ -1457,7 +1457,8 @@ export default function ScrollCanvas() {
           </div>
         </div>
 
-        <div ref={(el) => { revealRefs.current[4] = el; }} className="reveal w-full max-w-[85rem] px-6 py-32 text-center border-b border-white/5 relative mx-auto">
+        {/* Section: Investment & Ask */}
+        <div ref={(el) => { revealRefs.current[5] = el; }} className="reveal w-full max-w-[85rem] px-6 py-32 text-center border-b border-white/5 relative mx-auto">
           {/* Tech Background Pattern */}
           <div className="absolute inset-0 bg-radial-gradient from-cyan-900/5 via-transparent to-transparent pointer-events-none"></div>
           
@@ -1583,11 +1584,9 @@ export default function ScrollCanvas() {
               </div>
             </div>
 
-
           </div>
         </div>
 
-        {/* Section: Investment & Ask */}
         {/* Section 6: The Demo (Bottom CTA) */}
         <div ref={(el) => { revealRefs.current[6] = el; }} className="reveal w-full max-w-4xl px-6 py-40 text-center">
           <p className="text-cyan-400 font-bold tracking-[0.2em] uppercase text-sm mb-6">
