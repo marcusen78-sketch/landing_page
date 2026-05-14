@@ -124,6 +124,7 @@ export default function ScrollCanvas() {
   const [loaded, setLoaded] = useState(false);
   const [assetsLoaded, setAssetsLoaded] = useState(false);
   const [patientCount, setPatientCount] = useState("0");
+  const [capacityRatio, setCapacityRatio] = useState(0);
   const [businessCardProgress, setBusinessCardProgress] = useState(0);
   const [debug, setDebug] = useState({ scrollY: 0, progressPct: 0, currentFrame: 0, scrollHeight: 0, windowHeight: 0 });
 
@@ -301,6 +302,10 @@ export default function ScrollCanvas() {
         const currentPatients = Math.floor(easeOutProgress * 795000);
         const formattedPatients = currentPatients.toLocaleString('en-US');
         setPatientCount(formattedPatients);
+
+        // Animate capacity ratio counter (673)
+        const currentCapacity = Math.floor(easeOutProgress * 673);
+        setCapacityRatio(currentCapacity);
       } else {
         // Reset timer when outside the section
         counterStartTimeRef.current = null;
@@ -664,7 +669,7 @@ export default function ScrollCanvas() {
 
             {/* The Ratio - HERO ELEMENT */}
             <p className="text-cyan-300 text-8xl md:text-9xl font-extrabold tracking-tighter drop-shadow-[0_0_40px_rgba(0,212,255,0.7)] mb-1 counter-animate leading-none">
-              673 : 1
+              {capacityRatio} : 1
             </p>
             <p className="text-cyan-400 text-base md:text-lg tracking-[0.15em] uppercase font-bold drop-shadow-[0_0_12px_rgba(34,211,238,0.6)] mb-8">
               PATIENTS PER CLINICIAN
