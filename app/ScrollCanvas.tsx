@@ -1389,10 +1389,10 @@ export default function ScrollCanvas() {
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 relative z-10 leading-tight">
-            We are raising <span className="text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]">$150,000</span>
+            We are raising <span className="text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]">$400,000</span>
           </h2>
           <p className="text-cyan-50/70 text-xl md:text-2xl mb-16 max-w-3xl mx-auto relative z-10 font-medium">
-            via SAFE at a $1.5M Cap to validate our technology and secure early adoption.
+            via SAFE at a $4M Cap to validate our technology and secure early adoption.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 xl:gap-8 relative z-10 w-full text-left">
@@ -1426,34 +1426,34 @@ export default function ScrollCanvas() {
                 {/* Vertical Path Line */}
                 <div className="absolute left-0 top-2 bottom-2 w-[2px] bg-linear-to-b from-cyan-400 via-cyan-500/50 to-cyan-800/20 rounded-full"></div>
                 
-                {/* $30K Engineering */}
+                {/* $80K Engineering */}
                 <div className="relative">
                   <div className="absolute -left-[29px] top-1.5 w-3 h-3 rounded-full bg-[#0a0a0a] border-2 border-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)] group-hover:bg-cyan-400/20 transition-colors duration-300"></div>
-                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$30,000</h4>
+                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$80,000</h4>
                   <p className="text-white font-semibold text-sm mb-1">Engineering</p>
                   <p className="text-white/50 text-xs leading-relaxed">Tooling, infrastructure, and specific technical contracts.</p>
                 </div>
 
-                {/* $45K Clinical */}
+                {/* $120K Clinical */}
                 <div className="relative">
                   <div className="absolute -left-[29px] top-1.5 w-3 h-3 rounded-full bg-[#0a0a0a] border-2 border-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)] group-hover:bg-cyan-400/20 transition-colors duration-300 delay-75"></div>
-                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$45,000</h4>
+                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$120,000</h4>
                   <p className="text-white font-semibold text-sm mb-1">Clinical Validation</p>
                   <p className="text-white/50 text-xs leading-relaxed">10 real post-stroke patients & Fugl-Meyer biomarker correlation.</p>
                 </div>
 
-                {/* $25K Legal & Reg */}
+                {/* $67K Legal & Reg */}
                 <div className="relative">
                   <div className="absolute -left-[29px] top-1.5 w-3 h-3 rounded-full bg-[#0a0a0a] border-2 border-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)] group-hover:bg-cyan-400/20 transition-colors duration-300 delay-150"></div>
-                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$25,000</h4>
+                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$67,000</h4>
                   <p className="text-white font-semibold text-sm mb-1">Legal & Regulatory</p>
                   <p className="text-white/50 text-xs leading-relaxed">Prep for FDA SaMD pre-assessment.</p>
                 </div>
 
-                {/* $50K Ops */}
+                {/* $133K Ops */}
                 <div className="relative">
                   <div className="absolute -left-[29px] top-1.5 w-3 h-3 rounded-full bg-[#0a0a0a] border-2 border-cyan-400 shadow-[0_0_8px_rgba(34,211,238,0.8)] group-hover:bg-cyan-400/20 transition-colors duration-300 delay-200"></div>
-                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$50,000</h4>
+                  <h4 className="text-cyan-400 text-xl font-bold mb-1 tracking-tight">$133,000</h4>
                   <p className="text-white font-semibold text-sm mb-1">Operations</p>
                   <p className="text-white/50 text-xs leading-relaxed">General operations and infrastructure.</p>
                 </div>
