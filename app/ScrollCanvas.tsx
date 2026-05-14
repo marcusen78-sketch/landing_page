@@ -1443,12 +1443,12 @@ export default function ScrollCanvas() {
             </div>
 
             {/* Partner 5: Oakley Capital Limited (NEW) */}
-            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-amber-500/40 transition-all duration-500 group">
+            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-red-500/40 transition-all duration-500 group">
               <div className="h-24 w-full flex items-center justify-center mb-6">
                 <img src="/oakley.png" alt="Oakley Capital Limited" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
               </div>
               <h4 className="text-white font-semibold text-base text-center mb-2">Oakley Capital Limited</h4>
-              <span className="text-xs md:text-sm text-amber-400 font-semibold tracking-wider uppercase">
+              <span className="text-xs md:text-sm text-red-400 font-semibold tracking-wider uppercase">
                 Financial Advisoring
               </span>
             </div>
