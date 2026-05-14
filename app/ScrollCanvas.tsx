@@ -628,9 +628,14 @@ export default function ScrollCanvas() {
               </div>
             </div>
 
-            <p className="text-cyan-400 text-base md:text-lg tracking-wide uppercase font-semibold drop-shadow-[0_0_10px_rgba(34,211,238,0.6)] max-w-[200px]">
-              LIFETIME STROKE RISK
-            </p>
+            <div className="max-w-[220px]">
+              <p className="text-4xl md:text-5xl font-extrabold text-white mb-2 tracking-tight">
+                1 in 4 <span className="text-white/60">adults</span>
+              </p>
+              <p className="text-cyan-400 text-sm md:text-base tracking-wide uppercase font-semibold drop-shadow-[0_0_10px_rgba(34,211,238,0.6)]">
+                will experience a stroke
+              </p>
+            </div>
           </div>
         </div>
       )}
