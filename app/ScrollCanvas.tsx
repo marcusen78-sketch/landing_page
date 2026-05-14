@@ -1431,12 +1431,12 @@ export default function ScrollCanvas() {
               </span>
             </div>
 
-            {/* Partner 4: Sanitas (NEW) */}
+            {/* Partner 4: Bupa Group (NEW) */}
             <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-emerald-500/40 transition-all duration-500 group">
               <div className="h-24 w-full flex items-center justify-center mb-6">
-                <img src="/sanitas.png" alt="Sanitas" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                <img src="/bupa.png" alt="Bupa Group" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
               </div>
-              <h4 className="text-white font-semibold text-base text-center mb-2">Sanitas</h4>
+              <h4 className="text-white font-semibold text-base text-center mb-2">Bupa Group</h4>
               <span className="text-xs md:text-sm text-emerald-400 font-semibold tracking-wider uppercase">
                 Clinical Support
               </span>
@@ -1457,8 +1457,7 @@ export default function ScrollCanvas() {
           </div>
         </div>
 
-        {/* Section: Investment & Ask */}
-        <div ref={(el) => { revealRefs.current[5] = el; }} className="reveal w-full max-w-[85rem] px-6 py-32 text-center border-b border-white/5 relative mx-auto">
+        <div ref={(el) => { revealRefs.current[4] = el; }} className="reveal w-full max-w-[85rem] px-6 py-32 text-center border-b border-white/5 relative mx-auto">
           {/* Tech Background Pattern */}
           <div className="absolute inset-0 bg-radial-gradient from-cyan-900/5 via-transparent to-transparent pointer-events-none"></div>
           
@@ -1584,9 +1583,21 @@ export default function ScrollCanvas() {
               </div>
             </div>
 
+
+            {/* Partner 5: Oakley Capital Limited (NEW) */}
+            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-amber-500/40 transition-all duration-500 group">
+              <div className="h-24 w-full flex items-center justify-center mb-6">
+                <img src="/oakley.png" alt="Oakley Capital Limited" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <h4 className="text-white font-semibold text-base text-center mb-2">Oakley Capital Limited</h4>
+              <span className="text-xs md:text-sm text-amber-400 font-semibold tracking-wider uppercase">
+                Entrepreneurship Support
+              </span>
+            </div>
           </div>
         </div>
 
+        {/* Section: Investment & Ask */}
         {/* Section 6: The Demo (Bottom CTA) */}
         <div ref={(el) => { revealRefs.current[6] = el; }} className="reveal w-full max-w-4xl px-6 py-40 text-center">
           <p className="text-cyan-400 font-bold tracking-[0.2em] uppercase text-sm mb-6">
