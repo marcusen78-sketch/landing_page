@@ -1390,8 +1390,75 @@ export default function ScrollCanvas() {
           </div>
         </div>
 
+        <div ref={(el) => { revealRefs.current[4] = el; }} className="reveal w-full max-w-6xl px-6 py-24 text-center border-b border-white/5">
+          <p className="text-cyan-400/80 uppercase tracking-[0.2em] text-xs font-bold mb-12">
+            SUPPORTED BY INNOVATION LEADERS & TOP CLINICAL EXPERTS
+          </p>
+
+          {/* 2x2 Grid Layout for Maximum Prominence */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
+
+            {/* Partner 1: Harvard RCC */}
+            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-cyan-500/40 transition-all duration-500 group">
+              <div className="h-24 w-full flex items-center justify-center mb-6">
+                <img src="/rcc.png" alt="Harvard RCC" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <h4 className="text-white font-semibold text-base text-center mb-2">Real Colegio Complutense de Harvard</h4>
+              <span className="text-xs md:text-sm text-amber-400 font-semibold tracking-wider uppercase">
+                Entrepreneurship Support
+              </span>
+            </div>
+
+            {/* Partner 2: AWS */}
+            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-cyan-500/40 transition-all duration-500 group">
+              <div className="h-24 w-full flex items-center justify-center mb-6">
+                <img src="/aws.png" alt="AWS Spain" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <h4 className="text-white font-semibold text-base text-center mb-2">AWS Spain</h4>
+              <span className="text-xs md:text-sm text-cyan-400 font-semibold tracking-wider uppercase">
+                Technical Support
+              </span>
+            </div>
+
+            {/* Partner 3: Saturno Labs */}
+            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-cyan-500/40 transition-all duration-500 group">
+              <div className="h-24 w-full flex items-center justify-center mb-6">
+                <img src="/saturno.png" alt="Saturno Labs" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <h4 className="text-white font-semibold text-base text-center mb-2">Saturno Labs</h4>
+              <span className="text-xs md:text-sm text-cyan-400 font-semibold tracking-wider uppercase">
+                Technical Support
+              </span>
+            </div>
+
+            {/* Partner 4: Sanitas (NEW) */}
+            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-emerald-500/40 transition-all duration-500 group">
+              <div className="h-24 w-full flex items-center justify-center mb-6">
+                <img src="/sanitas.png" alt="Sanitas" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <h4 className="text-white font-semibold text-base text-center mb-2">Sanitas</h4>
+              <span className="text-xs md:text-sm text-emerald-400 font-semibold tracking-wider uppercase">
+                Clinical Support
+              </span>
+            </div>
+
+            {/* Partner 5: Oakley Capital Limited (NEW) */}
+            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-amber-500/40 transition-all duration-500 group">
+              <div className="h-24 w-full flex items-center justify-center mb-6">
+                <img src="/oakley.png" alt="Oakley Capital Limited" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <h4 className="text-white font-semibold text-base text-center mb-2">Oakley Capital Limited</h4>
+              <span className="text-xs md:text-sm text-amber-400 font-semibold tracking-wider uppercase">
+                Entrepreneurship Support
+              </span>
+            </div>
+
+
+          </div>
+        </div>
+
         {/* Section: Investment & Ask */}
-        <div ref={(el) => { revealRefs.current[4] = el; }} className="reveal w-full max-w-[85rem] px-6 py-32 text-center border-b border-white/5 relative mx-auto">
+        <div ref={(el) => { revealRefs.current[5] = el; }} className="reveal w-full max-w-[85rem] px-6 py-32 text-center border-b border-white/5 relative mx-auto">
           {/* Tech Background Pattern */}
           <div className="absolute inset-0 bg-radial-gradient from-cyan-900/5 via-transparent to-transparent pointer-events-none"></div>
           
@@ -1515,61 +1582,6 @@ export default function ScrollCanvas() {
                   </div>
                 </div>
               </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div ref={(el) => { revealRefs.current[5] = el; }} className="reveal w-full max-w-6xl px-6 py-24 text-center border-b border-white/5">
-          <p className="text-cyan-400/80 uppercase tracking-[0.2em] text-xs font-bold mb-12">
-            SUPPORTED BY INNOVATION LEADERS & TOP CLINICAL EXPERTS
-          </p>
-
-          {/* 2x2 Grid Layout for Maximum Prominence */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
-
-            {/* Partner 1: Harvard RCC */}
-            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-cyan-500/40 transition-all duration-500 group">
-              <div className="h-24 w-full flex items-center justify-center mb-6">
-                <img src="/rcc.png" alt="Harvard RCC" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <h4 className="text-white font-semibold text-base text-center mb-2">Real Colegio Complutense de Harvard</h4>
-              <span className="text-xs md:text-sm text-amber-400 font-semibold tracking-wider uppercase">
-                Entrepreneurship Support
-              </span>
-            </div>
-
-            {/* Partner 2: AWS */}
-            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-cyan-500/40 transition-all duration-500 group">
-              <div className="h-24 w-full flex items-center justify-center mb-6">
-                <img src="/aws.png" alt="AWS Spain" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <h4 className="text-white font-semibold text-base text-center mb-2">AWS Spain</h4>
-              <span className="text-xs md:text-sm text-cyan-400 font-semibold tracking-wider uppercase">
-                Technical Support
-              </span>
-            </div>
-
-            {/* Partner 3: Saturno Labs */}
-            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-cyan-500/40 transition-all duration-500 group">
-              <div className="h-24 w-full flex items-center justify-center mb-6">
-                <img src="/saturno.png" alt="Saturno Labs" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <h4 className="text-white font-semibold text-base text-center mb-2">Saturno Labs</h4>
-              <span className="text-xs md:text-sm text-cyan-400 font-semibold tracking-wider uppercase">
-                Technical Support
-              </span>
-            </div>
-
-            {/* Partner 4: Sanitas (NEW) */}
-            <div className="flex flex-col items-center justify-center p-8 border border-white/10 rounded-2xl bg-white/5 hover:bg-white/8 hover:border-emerald-500/40 transition-all duration-500 group">
-              <div className="h-24 w-full flex items-center justify-center mb-6">
-                <img src="/sanitas.png" alt="Sanitas" className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
-              </div>
-              <h4 className="text-white font-semibold text-base text-center mb-2">Sanitas</h4>
-              <span className="text-xs md:text-sm text-emerald-400 font-semibold tracking-wider uppercase">
-                Clinical Support
-              </span>
             </div>
 
           </div>
